@@ -4,9 +4,9 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_DB: max_way_db
-      POSTGRES_USER: max_way_user
-      POSTGRES_PASSWORD: root
+      POSTGRES_DB: maxway_toliq
+      POSTGRES_USER: maxway_admin
+      POSTGRES_PASSWORD: ozodbek2006
 
   web:
     build: .
@@ -24,8 +24,8 @@ services:
     depends_on:
       - db
     environment:
-      DB_NAME: max_way_db
-      DB_USER: max_way_user
-      DB_PASSWORD: root
+      DB_NAME: maxway_toliq
+      DB_USER: maxway_admin
+      DB_PASSWORD: ozodbek2006
       DB_HOST: db
       DB_PORT: 5432
