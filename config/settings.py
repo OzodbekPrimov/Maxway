@@ -23,11 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s33#vz!=_qo1^5t5_#5z*#xg)7hn1rj2g#gy+3zg!id6wqzl9i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['iftor.uz', 'www.iftor.uz', '16.171.150.97']
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
+CSRF_TRUSTED_ORIGINS = ['https://iftor.uz', 'https://www.iftor.uz']
 # Application definition
 
 INSTALLED_APPS = [
@@ -143,4 +147,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ['https://iftor.uz', 'https://www.iftor.uz']
+
