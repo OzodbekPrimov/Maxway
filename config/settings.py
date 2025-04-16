@@ -25,11 +25,9 @@ SECRET_KEY = 'django-insecure-s33#vz!=_qo1^5t5_#5z*#xg)7hn1rj2g#gy+3zg!id6wqzl9i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['iftor.uz', 'www.iftor.uz', '16.171.150.97']
+ALLOWED_HOSTS = ['iftor.uz', 'www.iftor.uz']
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+
 
 CSRF_TRUSTED_ORIGINS = ['https://iftor.uz', 'https://www.iftor.uz']
 # Application definition
